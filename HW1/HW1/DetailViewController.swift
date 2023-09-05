@@ -32,11 +32,5 @@ class DetailViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func backButtonTapped(_ sender: UIButton) {
-
-
-    }
-    
         
 }
