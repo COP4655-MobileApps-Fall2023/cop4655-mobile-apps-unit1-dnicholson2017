@@ -8,13 +8,13 @@
 import Foundation
 
 class ContextItem {
-    var title: String
-    var subtitle: String
-    var description: String
+    var mainLabel: String
+    var minorLabel: String
+    var infoLabel: String
     
-    init(title: String, subtitle: String, description: String) {
-        self.title = title
-        self.subtitle = subtitle
-        self.description = description
+    init(mainLabel: String, minorLabel: String, infoLabel: String) {
+        self.mainLabel = mainLabel
+        self.minorLabel = minorLabel
+        self.infoLabel = infoLabel
     }
 }

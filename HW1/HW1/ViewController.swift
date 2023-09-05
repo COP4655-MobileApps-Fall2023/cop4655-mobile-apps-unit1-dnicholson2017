@@ -9,35 +9,43 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var photoImageView: UIImageView!
-    @IBOutlet weak var roleLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var collegeLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var yearLabel: UILabel!
+    
+    @IBOutlet weak var originLabel: UILabel!
+    
+    
+    @IBOutlet weak var hobbyLabel: UILabel!
+    
 
     var contextItems = [
-        ContextItem(title: "Role", subtitle: "Software Engineer", description: "I develop mobile apps."),
-        ContextItem(title: "Location", subtitle: "San Francisco, CA", description: "I live in the Bay Area."),
-        ContextItem(title: "College", subtitle: "Stanford University", description: "I studied Computer Science.")
+        ContextItem(mainLabel: "Role", minorLabel: "Software Engineer", infoLabel: "I develop mobile apps."),
+        ContextItem(mainLabel: "Location", minorLabel: "San Francisco, CA", infoLabel: "I live in the Bay Area."),
+        ContextItem(mainLabel: "College", minorLabel: "Stanford University", infoLabel: "I studied Computer Science.")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoImageView.image = UIImage(named: "my_photo")
-        roleLabel.text = contextItems[0].title + ": " + contextItems[0].subtitle
-        locationLabel.text = contextItems[1].title + ": " + contextItems[1].subtitle
-        collegeLabel.text = contextItems[2].title + ": " + contextItems[2].subtitle
+        imageView.image = UIImage(named: "NICHOLSON_D'ANDRE_1064")
+        yearLabel.text = contextItems[0].mainLabel + ": " + contextItems[0].minorLabel
+        originLabel.text = contextItems[1].mainLabel + ": " + contextItems[1].minorLabel
+        hobbyLabel.text = contextItems[2].mainLabel + ": " + contextItems[2].minorLabel
     }
     
-    @IBAction func roleButtonTapped(_ sender: UIButton) {
+
+    
+    @IBAction func yearButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "showDetail", sender: contextItems[0])
     }
     
-    @IBAction func locationButtonTapped(_ sender: UIButton) {
+    @IBAction func originButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "showDetail", sender: contextItems[1])
     }
     
-    @IBAction func collegeButtonTapped(_ sender: UIButton) {
+    @IBAction func hobbyButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "showDetail", sender: contextItems[2])
     }
     

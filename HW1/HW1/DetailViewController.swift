@@ -5,11 +5,21 @@
 //  Created by D'Andre nicholson on 9/5/23.
 //
 
+import UIKit
+
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+        
+    
+    
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    
+    @IBOutlet weak var minorLabel: UILabel!
+    
+    
+    @IBOutlet weak var infoLabel: UILabel!
+    
     
     var contextItem: ContextItem?
     
@@ -17,13 +27,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         if let contextItem = contextItem {
-            titleLabel.text = contextItem.title
-            subtitleLabel.text = contextItem.subtitle
-            descriptionLabel.text = contextItem.description
+            mainLabel.text = contextItem.mainLabel
+            minorLabel.text = contextItem.minorLabel
+            infoLabel.text = contextItem.infoLabel
         }
     }
     
-    @IBAction func backButtonTapped(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
-    }
 }

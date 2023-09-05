@@ -22,7 +22,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-Tc-AF4">
                                 <rect key="frame" x="16" y="436" width="361" height="282"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8m-bt-2eX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8m-bt-2eX" userLabel="yearLabel">
                                         <rect key="frame" x="160" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -32,8 +32,11 @@
                                         <rect key="frame" x="143" y="52.333333333333371" width="75" height="20.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="yearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UcY-dX-gIu"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-Dd-1Rd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTi-Dd-1Rd" userLabel="originLabel">
                                         <rect key="frame" x="160" y="104.66666666666663" width="41.333333333333343" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -43,8 +46,11 @@
                                         <rect key="frame" x="143" y="157" width="75" height="20.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="originButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsG-wm-J2Y"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-RI-eQf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-RI-eQf" userLabel="hobbyLabel">
                                         <rect key="frame" x="160" y="209.33333333333337" width="41.333333333333343" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -54,6 +60,9 @@
                                         <rect key="frame" x="143" y="261.66666666666663" width="75" height="20.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="hobbyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkL-8G-7hb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -72,44 +81,48 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About Me" id="ngV-7D-E5D"/>
+                    <connections>
+                        <outlet property="hobbyLabel" destination="hbc-RI-eQf" id="W9X-n7-XBP"/>
+                        <outlet property="imageView" destination="k4V-Dx-7mR" id="qij-DA-4NU"/>
+                        <outlet property="originLabel" destination="cTi-Dd-1Rd" id="1un-WQ-bhZ"/>
+                        <outlet property="yearLabel" destination="z8m-bt-2eX" id="pbD-yj-Qhr"/>
+                        <segue destination="cGD-ay-Gdr" kind="show" identifier="showDetail" id="aue-km-q5n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="990.07633587786256" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="JcA-Uf-Uem">
             <objects>
-                <viewController id="cGD-ay-Gdr" sceneMemberID="viewController">
+                <viewController id="cGD-ay-Gdr" customClass="DetailViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRf-KO-Fdx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="Lw9-jW-EMI">
-                                <rect key="frame" x="16" y="75" width="361" height="727"/>
+                                <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRA-f0-WYS">
-                                        <rect key="frame" x="160" y="0.0" width="41.333333333333343" height="169.66666666666666"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRA-f0-WYS" userLabel="mainLabel">
+                                        <rect key="frame" x="160" y="0.0" width="41.333333333333343" height="155"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2H-14-4VV">
-                                        <rect key="frame" x="160" y="278.66666666666669" width="41.333333333333343" height="169.66666666666669"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2H-14-4VV" userLabel="minorLabel">
+                                        <rect key="frame" x="160" y="264" width="41.333333333333343" height="155"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWK-RX-EdY">
-                                        <rect key="frame" x="160" y="557.33333333333337" width="41.333333333333343" height="169.66666666666663"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWK-RX-EdY" userLabel="infoLabel">
+                                        <rect key="frame" x="160" y="528" width="41.333333333333343" height="155"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="k2H-14-4VV" firstAttribute="top" secondItem="gRA-f0-WYS" secondAttribute="bottom" constant="16" id="mXS-lF-JLu"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1O7-16-4vc"/>
@@ -121,6 +134,12 @@
                             <constraint firstItem="1O7-16-4vc" firstAttribute="bottom" secondItem="Lw9-jW-EMI" secondAttribute="bottom" constant="16" id="kWB-4a-IXD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Q0X-LE-TgE"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="jWK-RX-EdY" id="Vjl-5N-Daa"/>
+                        <outlet property="mainLabel" destination="gRA-f0-WYS" id="FGr-zQ-kHw"/>
+                        <outlet property="minorLabel" destination="k2H-14-4VV" id="Naq-h6-L4y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1F-dn-4uY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
