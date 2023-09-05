@@ -29,9 +29,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipR-Sw-enM">
-                                        <rect key="frame" x="143" y="52.333333333333371" width="75" height="20.333333333333329"/>
+                                        <rect key="frame" x="150" y="52.333333333333371" width="61" height="20.333333333333329"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="View"/>
                                         <connections>
                                             <action selector="yearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UcY-dX-gIu"/>
                                         </connections>
@@ -43,9 +43,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1N-bK-FXb">
-                                        <rect key="frame" x="143" y="157" width="75" height="20.333333333333343"/>
+                                        <rect key="frame" x="150" y="157" width="61" height="20.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="View"/>
                                         <connections>
                                             <action selector="originButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsG-wm-J2Y"/>
                                         </connections>
@@ -57,9 +57,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZx-54-I3K">
-                                        <rect key="frame" x="143" y="261.66666666666663" width="75" height="20.333333333333314"/>
+                                        <rect key="frame" x="150" y="261.66666666666663" width="61" height="20.333333333333314"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="View"/>
                                         <connections>
                                             <action selector="hobbyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkL-8G-7hb"/>
                                         </connections>

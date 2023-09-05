@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     
 
     var contextItems = [
-        ContextItem(mainLabel: "Role", minorLabel: "Software Engineer", infoLabel: "I develop mobile apps."),
-        ContextItem(mainLabel: "Location", minorLabel: "San Francisco, CA", infoLabel: "I live in the Bay Area."),
-        ContextItem(mainLabel: "College", minorLabel: "Stanford University", infoLabel: "I studied Computer Science.")
+        ContextItem(mainLabel: "Year", minorLabel: "Senior", infoLabel: "I am a senior at FAU, getting my second bachelors in computer science."),
+        ContextItem(mainLabel: "Origin", minorLabel: "Ft. Lauderdale, FL", infoLabel: "I was born and raised in South Florida. My favorite place here is Morikami Gardens."),
+        ContextItem(mainLabel: "Fun Fact", minorLabel: "", infoLabel: "I was a 7th/8th grade math teacher before starting my career as a programmer.")
     ]
     
     override func viewDidLoad() {
