@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5lU-Uy-WEt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="luh-qx-6dn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -15,97 +15,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NICHOLSON_D'ANDRE_1064" translatesAutoresizingMaskIntoConstraints="NO" id="FTJ-hN-B9Q">
-                                <rect key="frame" x="76" y="127" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My school" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-1W-ZTb">
-                                <rect key="frame" x="175" y="367" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Zz2-9m-MaN" appends="YES" id="fly-Aj-GJ1"/>
-                                </connections>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Resume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmy-yb-5XE">
-                                <rect key="frame" x="175" y="416" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="66m-Tz-5pw" appends="YES" id="fA3-vN-1D4"/>
-                                </connections>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cool Fact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSx-SP-3Am">
-                                <rect key="frame" x="175" y="471" width="72" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Ejk-cL-jVx" appends="YES" id="GQe-Gk-pBD"/>
-                                </connections>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BoE-Mq-1pV"/>
-                    <connections>
-                        <segue destination="MB9-MI-3fh" kind="show" identifier="detailSegue" id="pgf-XZ-kqG"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="ngV-7D-E5D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Zz2-9m-MaN"/>
-                <tapGestureRecognizer id="66m-Tz-5pw"/>
-                <tapGestureRecognizer id="Ejk-cL-jVx"/>
             </objects>
-            <point key="canvasLocation" x="944.27480916030527" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="990.07633587786256" y="-2.1126760563380285"/>
         </scene>
-        <!--College View Controller-->
-        <scene sceneID="1Ah-tJ-s5c">
+        <!--View Controller-->
+        <scene sceneID="JcA-Uf-Uem">
             <objects>
-                <viewController id="MB9-MI-3fh" customClass="CollegeViewController" customModule="HW1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gbB-5T-hhX">
+                <viewController id="cGD-ay-Gdr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eRf-KO-Fdx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Oex-1N-aep"/>
+                        <viewLayoutGuide key="safeArea" id="1O7-16-4vc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VFO-QC-2TU"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yhx-41-3F6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1F-dn-4uY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679" y="14"/>
+            <point key="canvasLocation" x="1938" y="23"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Kjl-ze-Tdv">
+        <scene sceneID="kjv-sB-hCs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5lU-Uy-WEt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="luh-qx-6dn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CGR-VA-fqc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s5b-sj-vm9">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6T4-UN-2WA"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xWm-0Y-eUc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cI3-9F-5Dt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FT-hV-Ngv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17.557251908396946" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="63.358778625954194" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
-        <image name="NICHOLSON_D'ANDRE_1064" width="3956" height="4945"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
